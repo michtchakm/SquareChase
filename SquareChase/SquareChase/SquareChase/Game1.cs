@@ -95,6 +95,7 @@ namespace SquareChase
                 playerScore++;
                 timeRemaining = 0.0f;
             }
+
             timeRemaining = MathHelper.Max(0, timeRemaining -
             (float)gameTime.ElapsedGameTime.TotalSeconds);
             this.Window.Title = "Score : " + playerScore.ToString();
